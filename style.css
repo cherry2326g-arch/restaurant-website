@@ -1,0 +1,169 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 1000;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.overlay h2 {
+  font-size: 3rem;
+}
+
+.overlay p {
+  margin: 15px 0;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* MENU */
+.menu {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.4s;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* BOOKING */
+.booking {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #000, #333);
+  display: flex;
+  justify-content: center;
+}
+
+.booking-box {
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+}
+
+.booking-box input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.booking-box button {
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .overlay h2 {
+    font-size: 2rem;
+  }
+
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
